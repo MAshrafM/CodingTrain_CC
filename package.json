@@ -1,0 +1,24 @@
+{
+  "name": "codingcallenges",
+  "version": "1.0.0",
+  "description": "TheCodingTrain p5 challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAshrafM/CodingTrain_CC.git"
+  },
+  "author": "MAshraf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAshrafM/CodingTrain_CC/issues"
+  },
+  "homepage": "https://github.com/MAshrafM/CodingTrain_CC#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}

@@ -6,5 +6,9 @@ Simple node/express application to view different static files on the same site,
 [Youtube Playlist](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH)
 
 ## Challenges
-- CC01: Star Field
-![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/01_StarField/show.gif)
+- CC01: Star Field  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/01_StarField/show.gif)  
+  
+- CC02: Sponge Fractal  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/02_SpongeFractal/show.gif)  
+  

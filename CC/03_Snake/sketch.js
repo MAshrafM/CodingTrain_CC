@@ -11,7 +11,17 @@ function setup() {
 }
 
 // Control
-
+function keyPressed() {
+  if(keyCode === UP_ARROW){
+    snake.direction(0, -1);
+  } else if (keyCode == DOWN_ARROW) {
+    snake.direction(0, 1);
+  } else if (keyCode == RIGHT_ARROW) {
+    snake.direction(1, 0);
+  } else if (keyCode == LEFT_ARROW) {
+    snake.direction(-1, 0);
+  }
+}
 // Draw
 function draw() {
   background(51); // background color
@@ -25,6 +35,11 @@ function Snake() {
   this.y = 0;
   this.xSpeed = 1;
   this.ySpeed = 0;
+  
+  this.direction = function(x, y){
+    this.xSpeed = x;
+    this.ySpeed = y;
+  }
   
   this.update= function() {
     this.x = this.x + this.xSpeed;

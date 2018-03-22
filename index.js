@@ -21,6 +21,10 @@ app.get('/cc01', function(request, response) {
 app.get('/cc02', function(request, response) {
   response.sendFile('/CC/02_SpongeFractal/index.html', { root: __dirname })
 })
+// Challenge 03
+app.get('/cc03', function(request, response) {
+  response.sendFile('/CC/03_Snake/index.html', { root: __dirname })
+})
 
 // Listen
 app.listen(app.get('port'), function() {

@@ -12,3 +12,6 @@ Simple node/express application to view different static files on the same site,
 - CC02: Sponge Fractal  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/02_SpongeFractal/show.gif)  
   
+- CC03: Snake  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/03_Snake/show.gif)  
+  

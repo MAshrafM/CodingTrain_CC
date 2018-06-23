@@ -13,17 +13,16 @@ app.use("/CC", express.static(__dirname + '/CC'));
 /* ToDo Main Route for all challenges later */
 // To Do
 
-// Challenge 01
-app.get('/cc01', function(request, response) {
-  response.sendFile('/CC/01_StarField/index.html', { root: __dirname })
-})
-// Challenge 02
-app.get('/cc02', function(request, response) {
-  response.sendFile('/CC/02_SpongeFractal/index.html', { root: __dirname })
-})
-// Challenge 03
-app.get('/cc03', function(request, response) {
-  response.sendFile('/CC/03_Snake/index.html', { root: __dirname })
+// Challenges
+const challenges = {
+                    '01' : 'StarField',
+                    '02' : 'SpongeFractal',
+                    '03' : 'Snake'
+                  }
+Object.keys(challenges).forEach(function (c) {
+  app.get(`/cc${c}`, function(request, response) {
+    response.sendFile(`/CC/${c}_${challenges[c]}/index.html`, { root: __dirname })
+  })
 })
 
 // Listen

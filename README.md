@@ -15,3 +15,6 @@ Simple node/express application to view different static files on the same site,
 - CC03: Snake  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/03_Snake/show.gif)  
   
+- CC04: Color Rain  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/04_ColorRain/show.gif)  
+  

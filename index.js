@@ -17,7 +17,8 @@ app.use("/CC", express.static(__dirname + '/CC'));
 const challenges = {
                     '01' : 'StarField',
                     '02' : 'SpongeFractal',
-                    '03' : 'Snake'
+                    '03' : 'Snake',
+                    '04' : 'ColorRain'
                   }
 Object.keys(challenges).forEach(function (c) {
   app.get(`/cc${c}`, function(request, response) {

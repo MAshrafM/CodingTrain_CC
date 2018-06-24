@@ -11,7 +11,7 @@ const SCREEN_SIZE = 600;
 function setup() {
   createCanvas(SCREEN_SIZE, SCREEN_SIZE);
   ship = new Ship();
-  for(let i = 0; i < 10; i++){
+  for(let i = 0; i < 5; i++){
     rocks[i] = new Rock(i * 80 + 80, 60);
   }
   
@@ -20,9 +20,9 @@ function setup() {
 // Control
 function keyPressed(){
   if(keyCode === RIGHT_ARROW){
-    ship.move(1);
+    ship.setDir(1);
   } else if (keyCode === LEFT_ARROW) {
-    ship.move(-1)
+    ship.setDir(-1)
   } 
   
   if(key === ' '){
@@ -31,14 +31,30 @@ function keyPressed(){
   }
 }
 
+function keyReleased(){
+  if(keyCode === RIGHT_ARROW || keyCode === LEFT_ARROW){
+    ship.setDir(0);
+  }
+}
+
 
 // Draw
 function draw() {
   background(51);
+  let edge = false;
   ship.show();
+  ship.move();
   
   for(let i = 0; i < rocks.length; i++){
     rocks[i].show();
+    rocks[i].move();
+    if(rocks[i].x > width || rocks[i].x < 0) { edge = true; }
+  }
+  
+  if(edge) {
+    for(let i = 0; i < rocks.length; i++){
+      rocks[i].shiftDown();
+    }
   }
   
   for(let i = 0; i < blasts.length; i++){

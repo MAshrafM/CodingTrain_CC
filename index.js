@@ -18,7 +18,8 @@ const challenges = {
                     '01' : 'StarField',
                     '02' : 'SpongeFractal',
                     '03' : 'Snake',
-                    '04' : 'ColorRain'
+                    '04' : 'ColorRain',
+                    '05' : 'SpaceInvaders'
                   }
 Object.keys(challenges).forEach(function (c) {
   app.get(`/cc${c}`, function(request, response) {

@@ -21,3 +21,6 @@ Simple node/express application to view different static files on the same site,
 - CC05: Space Invaders  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/05_SpaceInvaders/show.gif)  
   
+- CC06: Mitosis  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/06_Mitosis/show.gif)  
+  

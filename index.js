@@ -20,7 +20,8 @@ const challenges = {
                     '03' : 'Snake',
                     '04' : 'ColorRain',
                     '05' : 'SpaceInvaders',
-                    '06' : 'Mitosis'
+                    '06' : 'Mitosis',
+                    '07' : 'Solar2d'
                   }
 Object.keys(challenges).forEach(function (c) {
   app.get(`/cc${c}`, function(request, response) {

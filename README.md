@@ -23,4 +23,7 @@ Simple node/express application to view different static files on the same site,
   
 - CC06: Mitosis  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/06_Mitosis/show.gif)  
+
+- CC07: Solar2d  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/07_Solar2d/show.gif)  
   

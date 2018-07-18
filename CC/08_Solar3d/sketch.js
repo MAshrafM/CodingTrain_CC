@@ -21,7 +21,6 @@ function setup() {
 function draw() {
   background(0);
   fill(255);
-  ambientLight(150);
   sun.show();
   sun.orbit();
 }

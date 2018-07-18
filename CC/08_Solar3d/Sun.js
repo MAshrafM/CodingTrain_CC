@@ -32,17 +32,18 @@ function Sun(radius, distance, orbitSpeed) {
   }
   
   this.show = () => {
-    
-    let v2 = createVector(1, 0, 1);
-    let p = this.vector.cross(v2)
-    fill(255);
-    stroke(255);
-    rotate(this.angle, p.x, p.y, p.z);
-    translate(this.vector.x, this.vector.y, this.vector.z);
-    sphere(this.radius)
     push();
+    noStroke();
+    rotate(this.angle);
+    stroke(255);
+    translate(this.vector.x, this.vector.y, this.vector.z);
+    noStroke();
+    fill(252, 212, 64);
+    ambientLight(200);
+    sphere(this.radius);
     if(this.planets != null){
       for(let i = 0; i < this.planets.length; i++){
+        ambientLight(150);
        this.planets[i].show();
       }
     }

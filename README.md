@@ -29,3 +29,6 @@ Simple node/express application to view different static files on the same site,
   
 - CC08: Solar3d  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/08_Solar3d/show.gif)  
+
+- CC09: Solar3dTexture 
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/09_Solar3dTexture/show.gif)  

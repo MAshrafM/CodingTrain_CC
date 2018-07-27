@@ -23,7 +23,8 @@ const challenges = {
                     '06' : 'Mitosis',
                     '07' : 'Solar2d',
                     '08' : 'Solar3d',
-                    '09' : 'Solar3dTexture'
+                    '09' : 'Solar3dTexture',
+                    '10' : 'MazeGen'
                   }
 Object.keys(challenges).forEach(function (c) {
   app.get(`/cc${c}`, function(request, response) {

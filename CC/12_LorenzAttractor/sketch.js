@@ -3,7 +3,6 @@
 var x = 0.01,
     y = 0,
     z = 0;
-
 let points = new Array();
 
 // Constants
@@ -40,15 +39,17 @@ function draw() {
 	let camY = map(mouseY, 0, height, -200,200); 
 	camera(camX, camY, (height/2.0) / tan(PI*30.0 / 180.0), 0, 0, 0, 0, 1, 0);
 	scale(5);
-	stroke(255);
+	//stroke(255);
 	noFill();
   
   let hu = 0;
+  push();
 	beginShape();
-  for (let v of points) {
-		stroke(hu, 255, 255);
+  points.forEach(function(v) {
+    stroke(hu, 255, 255);
 		vertex(v.x, v.y, v.z);
     hu > 255 ? hu = 1 : hu += 1;
-	}
+  });
 	endShape();
+  pop();
 }

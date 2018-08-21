@@ -35,3 +35,9 @@ Simple node/express application to view different static files on the same site,
   
 - CC10: MazeGenerator and Solver  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/10_MazeGen/show.gif)  
+
+- CC11: PerlinNoise  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/11_PerlinNoise/show.gif)  
+
+- CC12: LorenzAttractor  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/12_LorenzAttractor/show.gif)  

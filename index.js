@@ -26,7 +26,8 @@ const challenges = {
                     '09' : 'Solar3dTexture',
                     '10' : 'MazeGen',
                     '11' : 'PerlinNoise',
-                    '12' : 'LorenzAttractor'
+                    '12' : 'LorenzAttractor',
+                    '13' : 'Diffusion'
                   }
 Object.keys(challenges).forEach(function (c) {
   app.get(`/cc${c}`, function(request, response) {

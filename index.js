@@ -1,13 +1,19 @@
 const express = require('express')
+const exphbs  = require('express-handlebars')
 const bodyParser = require('body-parser')
+const path = require('path')
+const fs = require('fs')
 const app = express()
 
 // middleware
 app.set('port', (process.env.PORT || 3000))
-app.set('view engine', 'html');
+app.engine('handlebars', exphbs({defaultLayout: 'main'}))
+app.set('view engine', 'handlebars')
+app.set('views', path.join(__dirname, 'views/CC/'))
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use("/lib", express.static(__dirname + '/lib'));
-app.use("/CC", express.static(__dirname + '/CC'));
+app.use("/lib", express.static(__dirname + '/lib'))
+app.use("/CC", express.static(__dirname + '/CC'))
+app.use("/public/CC", express.static(__dirname + '/public/CC'))
 
 // routes
 /* ToDo Main Route for all challenges later */
@@ -29,9 +35,20 @@ const challenges = {
                     '12' : 'LorenzAttractor',
                     '13' : 'Diffusion'
                   }
+
 Object.keys(challenges).forEach(function (c) {
+  let scripts = []
+  let dirPath = path.join(__dirname, 'public/CC', `${c}_${challenges[c]}`)
+  fs.readdir(dirPath, function (err, files) {
+    if (err) {
+      return console.log('Unable to scan directory: ' + err);
+    } 
+    files.forEach(function (file) {
+      scripts.push({script: `${c}_${challenges[c]}/${file}`})
+    })
+  })
   app.get(`/cc${c}`, function(request, response) {
-    response.sendFile(`/CC/${c}_${challenges[c]}/index.html`, { root: __dirname })
+    response.render('index', {title: `${c} | ${challenges[c]}`, scripts: scripts})
   })
 })
 

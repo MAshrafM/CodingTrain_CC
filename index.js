@@ -35,6 +35,7 @@ const challenges = {
                     '12' : 'LorenzAttractor',
                     '13' : 'Diffusion',
                     '14' : 'FractalRec',
+                    '15' : 'FractalOO',
                   }
 
 Object.keys(challenges).forEach(function (c) {

@@ -5,14 +5,14 @@ var leaves = [];
 var count = 0;
 
 // constant
-const SCREEN_SIZE = 400;
-const TREE_LVL = 6;
+const SCREEN_SIZE = 600;
+const TREE_LVL = 8;
 
 // Setup
 function setup() {
   createCanvas(SCREEN_SIZE, SCREEN_SIZE);
   let a = createVector(SCREEN_SIZE / 2, SCREEN_SIZE);
-  let b = createVector(SCREEN_SIZE / 2, SCREEN_SIZE - 100);
+  let b = createVector(SCREEN_SIZE / 2, SCREEN_SIZE - 150);
   let root = new Branch(a, b);
   
   tree[0] = root;
@@ -51,6 +51,7 @@ function draw(){
     noStroke();
     ellipse(leaves[i].x, leaves[i].y, 8, 8);
     leaves[i].y += random(0,2);
+    //tree[i].jitter();
   }
 }
 

@@ -41,3 +41,8 @@ Simple node/express application to view different static files on the same site,
 
 - CC12: LorenzAttractor  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/12_LorenzAttractor/show.gif)  
+
+- CC13: Diffusion Reaction  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/13_Diffusion/show.PNG)  
+  
+  

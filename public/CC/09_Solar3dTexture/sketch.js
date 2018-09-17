@@ -1,5 +1,5 @@
 // globals
-var easycam;
+//var easycam;
 var sun;
 var sunTexture;
 var textures = new Array(5);
@@ -15,8 +15,8 @@ function setup() {
   textures[2] = loadImage("/CC/09_Solar3dTexture/mars.jpg");
   textures[3] = loadImage("/CC/09_Solar3dTexture/jupiter.jpg");
   textures[4] = loadImage("/CC/09_Solar3dTexture/neptune.jpg");
-  easycam = createEasyCam();
-  easycam = new Dw.EasyCam(this._renderer, {distance:500, center:[0,0,0]});
+  //easycam = createEasyCam();
+  //easycam = new Dw.EasyCam(this._renderer, {distance:500, center:[0,0,0]});
   
   sun = new Sun(50, 0, 0, sunTexture);
   sun.spawnPlanets(5);

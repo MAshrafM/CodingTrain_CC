@@ -33,7 +33,8 @@ const challenges = {
                     '10' : 'MazeGen',
                     '11' : 'PerlinNoise',
                     '12' : 'LorenzAttractor',
-                    '13' : 'Diffusion'
+                    '13' : 'Diffusion',
+                    '14' : 'FractalRec',
                   }
 
 Object.keys(challenges).forEach(function (c) {

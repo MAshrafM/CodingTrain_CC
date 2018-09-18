@@ -22,8 +22,8 @@ function setup() {
   createCanvas(SCREEN_SIZE, SCREEN_SIZE);
   angle = radians(25);
   background(51);
-  //createP(axiom);
   turtle();
+  //control
   var btn = createButton("generate");
   btn.mousePressed(generate);
 }
@@ -49,7 +49,6 @@ function generate(){
   }
   
   sentence = nextSentence;
-  //createP(sentence);
   turtle();
 }
 

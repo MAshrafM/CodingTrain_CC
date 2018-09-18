@@ -53,3 +53,7 @@ Simple node/express application to view different static files on the same site,
 
 - CC16: Fractal Trees L System  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/16_FractalL/show.gif)  
+
+- CC17: Fractal Trees Space Colonization  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/17_FractalSC/show.gif)  
+

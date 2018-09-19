@@ -59,3 +59,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC18: Fractal Trees Space Colonization 3D  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/18_Fractal3d/show.gif)  
+
+- CC19: Superellipse  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/19_Superellipse/show.gif)  

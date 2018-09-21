@@ -40,6 +40,7 @@ const challenges = {
                     '17' : 'FractalSC',
                     '18' : 'Fractal3d',
                     '19' : 'Superellipse',
+                    '20' : 'Cloth3d',
                   }
 
 Object.keys(challenges).forEach(function (c) {

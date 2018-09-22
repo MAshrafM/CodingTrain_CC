@@ -34,9 +34,10 @@ function draw(){
       let num = 0;
       
       while(num < 100){
+        // calc z^2
         let real = a*a - b*b;
         let img = 2*a*b;
-        
+        // get to f(z) = z^2 + c
         a = real + copyA;
         b = img + copyB;
       

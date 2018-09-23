@@ -42,7 +42,7 @@ const challenges = {
                     '19' : 'Superellipse',
                     '20' : 'Cloth3d',
                     '21' : 'Mandelbrot',
-                    
+                    '22' : 'JuliaSet',
                   }
 
 Object.keys(challenges).forEach(function (c) {

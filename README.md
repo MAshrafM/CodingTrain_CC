@@ -69,3 +69,5 @@ Simple node/express application to view different static files on the same site,
 - CC21: Mandelbrot
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/21_Mandelbrot/show.png)  
 
+- CC22: Julia Set  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/22_JuliaSet/show.gif)  

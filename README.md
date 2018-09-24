@@ -71,3 +71,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC22: Julia Set  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/22_JuliaSet/show.gif)  
+
+- CC23: Supershapes 2D  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/23_Supershape2d/show.gif)  

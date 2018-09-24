@@ -43,6 +43,8 @@ const challenges = {
                     '20' : 'Cloth3d',
                     '21' : 'Mandelbrot',
                     '22' : 'JuliaSet',
+                    '23' : 'Supershape2d',
+                    
                   }
 
 Object.keys(challenges).forEach(function (c) {

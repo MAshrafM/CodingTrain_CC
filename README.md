@@ -74,3 +74,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC23: Supershapes 2D  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/23_Supershape2d/show.gif)  
+
+- CC24: Perlin Noise Flow Field  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/24_PerlinNoiseFlowField/show.gif)  

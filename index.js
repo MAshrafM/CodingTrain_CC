@@ -44,6 +44,7 @@ const challenges = {
                     '21' : 'Mandelbrot',
                     '22' : 'JuliaSet',
                     '23' : 'Supershape2d',
+                    '24' : 'PerlinNoiseFlowField',
                     
                   }
 

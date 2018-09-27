@@ -45,7 +45,7 @@ Simple node/express application to view different static files on the same site,
 - CC13: Diffusion Reaction  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/13_Diffusion/show.PNG)  
   
-- CC14: Fractal Trees : Recursion
+- CC14: Fractal Trees : Recursion  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/14_FractalRec/show.gif)  
   
 - CC15: Fractal Trees Object Oriented  
@@ -66,7 +66,7 @@ Simple node/express application to view different static files on the same site,
 - CC20: Cloth 3D  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/20_Cloth3d/show.gif)  
 
-- CC21: Mandelbrot
+- CC21: Mandelbrot  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/21_Mandelbrot/show.png)  
 
 - CC22: Julia Set  

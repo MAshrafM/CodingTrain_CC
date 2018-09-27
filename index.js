@@ -46,6 +46,7 @@ const challenges = {
                     '23' : 'Supershape2d',
                     '24' : 'PerlinNoiseFlowField',
                     '25' : 'SphericalGeometry',
+                    '26' : 'Supershape3d',
                     
                   }
 

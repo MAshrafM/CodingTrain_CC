@@ -34,61 +34,61 @@ app.use("/public/CC", express.static(__dirname + '/public/CC'))
 // To Do
 
 // Challenges
-const challenges = {
-                    '01' : 'StarField',
-                    '02' : 'SpongeFractal',
-                    '03' : 'Snake',
-                    '04' : 'ColorRain',
-                    '05' : 'SpaceInvaders',
-                    '06' : 'Mitosis',
-                    '07' : 'Solar2d',
-                    '08' : 'Solar3d',
-                    '09' : 'Solar3dTexture',
-                    '10' : 'MazeGen',
-                    '11' : 'PerlinNoise',
-                    '12' : 'LorenzAttractor',
-                    '13' : 'Diffusion',
-                    '14' : 'FractalRec',
-                    '15' : 'FractalOO',
-                    '16' : 'FractalL',
-                    '17' : 'FractalSC',
-                    '18' : 'Fractal3d',
-                    '19' : 'Superellipse',
-                    '20' : 'Cloth3d',
-                    '21' : 'Mandelbrot',
-                    '22' : 'JuliaSet',
-                    '23' : 'Supershape2d',
-                    '24' : 'PerlinNoiseFlowField',
-                    '25' : 'SphericalGeometry',
-                    '26' : 'Supershape3d',
-                    '27' : 'Fireworks',
-                  }
+const challenges = [
+                    {id: '01', title: 'StarField'},
+                    {id: '02', title: 'SpongeFractal'},
+                    {id: '03', title: 'Snake'},
+                    {id: '04', title: 'ColorRain'},
+                    {id: '05', title: 'SpaceInvaders'},
+                    {id: '06', title: 'Mitosis'},
+                    {id: '07', title: 'Solar2d'},
+                    {id: '08', title: 'Solar3d'},
+                    {id: '09', title: 'Solar3dTexture'},
+                    {id: '10', title: 'MazeGen'},
+                    {id: '11', title: 'PerlinNoise'},
+                    {id: '12', title: 'LorenzAttractor'},
+                    {id: '13', title: 'Diffusion'},
+                    {id: '14', title: 'FractalRec'},
+                    {id: '15', title: 'FractalOO'},
+                    {id: '16', title: 'FractalL'},
+                    {id: '17', title: 'FractalSC'},
+                    {id: '18', title: 'Fractal3d'},
+                    {id: '19', title: 'Superellipse'},
+                    {id: '20', title: 'Cloth3d'},
+                    {id: '21', title: 'Mandelbrot'},
+                    {id: '22', title: 'JuliaSet'},
+                    {id: '23', title: 'Supershape2d'},
+                    {id: '24', title: 'PerlinNoiseFlowField'},
+                    {id: '25', title: 'SphericalGeometry'},
+                    {id: '26', title: 'Supershape3d'},
+                    {id: '27', title: 'Fireworks'},
+                  ]
 
-Object.keys(challenges).forEach(function (c) {
+challenges.forEach(function (c) {
   let scripts = []
-  let dirPath = path.join(__dirname, 'public/CC', `${c}_${challenges[c]}`)
+  let dirPath = path.join(__dirname, 'public/CC', `${c.id}_${c.title}`)
   fs.readdir(dirPath, function (err, files) {
     if (err) {
       return console.log('Unable to scan directory: ' + err);
     } 
     files.forEach(function (file) {
-      scripts.push({script: `${c}_${challenges[c]}/${file}`})
+      scripts.push({script: `${c.id}_${c.title}/${file}`})
     })
   })
-  app.get(`/cc${c}`, function(request, response) {
-    response.render('index', {title: `${c} | ${challenges[c]}`, scripts: scripts, challenges: challenges, nextC: getNext(c), prevC : getPrev(c), current: challenges[c]})
+  app.get(`/cc${c.id}`, function(request, response) {
+    response.render('index', {title: `${c.id} | ${c.title}`, scripts: scripts, challenges: challenges, nextC: getNext(c), prevC : getPrev(c), current: c.title})
   })
 })
 
 function getNext(i){
-  let c = Number(i)  + 1;
+  let c = Number(i.id)  + 1;
   if(c < 10){
     c = '0' + c;
   }
   return c > Object.keys(challenges).length ? '0' : c;
 }
 function getPrev(i){
-  let c = Number(i)  - 1;
+  let c = Number(i.id)  - 1;
     if(c < 10){
     c = '0' + c;
   }

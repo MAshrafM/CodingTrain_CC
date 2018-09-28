@@ -7,7 +7,10 @@ const app = express()
 
 // middleware
 app.set('port', (process.env.PORT || 3000))
-app.engine('handlebars', exphbs({defaultLayout: 'main'}))
+app.engine('handlebars', exphbs({defaultLayout: 'main',
+layoutsDir: __dirname + '/views/layouts/',
+  partialsDir: __dirname + '/views/partials/'
+}))
 app.set('view engine', 'handlebars')
 app.set('views', path.join(__dirname, 'views/CC/'))
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -62,7 +65,7 @@ Object.keys(challenges).forEach(function (c) {
     })
   })
   app.get(`/cc${c}`, function(request, response) {
-    response.render('index', {title: `${c} | ${challenges[c]}`, scripts: scripts})
+    response.render('index', {title: `${c} | ${challenges[c]}`, scripts: scripts, challenges: challenges})
   })
 })
 

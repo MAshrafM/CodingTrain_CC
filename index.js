@@ -47,7 +47,7 @@ const challenges = {
                     '24' : 'PerlinNoiseFlowField',
                     '25' : 'SphericalGeometry',
                     '26' : 'Supershape3d',
-                    
+                    '27' : 'Fireworks',
                   }
 
 Object.keys(challenges).forEach(function (c) {

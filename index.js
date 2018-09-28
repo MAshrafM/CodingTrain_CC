@@ -7,10 +7,21 @@ const app = express()
 
 // middleware
 app.set('port', (process.env.PORT || 3000))
-app.engine('handlebars', exphbs({defaultLayout: 'main',
-layoutsDir: __dirname + '/views/layouts/',
+
+const hbs = exphbs.create({
+  helpers: {
+    'ifActive': function(curr, chall, options){
+      if(curr === chall){
+        return options.fn(this);
+      }
+      return options.inverse(this);
+    }
+  },
+  defaultLayout: 'main',
+  layoutsDir: __dirname + '/views/layouts/',
   partialsDir: __dirname + '/views/partials/'
-}))
+})
+app.engine('handlebars', hbs.engine)
 app.set('view engine', 'handlebars')
 app.set('views', path.join(__dirname, 'views/CC/'))
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -65,9 +76,24 @@ Object.keys(challenges).forEach(function (c) {
     })
   })
   app.get(`/cc${c}`, function(request, response) {
-    response.render('index', {title: `${c} | ${challenges[c]}`, scripts: scripts, challenges: challenges})
+    response.render('index', {title: `${c} | ${challenges[c]}`, scripts: scripts, challenges: challenges, nextC: getNext(c), prevC : getPrev(c), current: challenges[c]})
   })
 })
+
+function getNext(i){
+  let c = Number(i)  + 1;
+  if(c < 10){
+    c = '0' + c;
+  }
+  return c > Object.keys(challenges).length ? '0' : c;
+}
+function getPrev(i){
+  let c = Number(i)  - 1;
+    if(c < 10){
+    c = '0' + c;
+  }
+  return c <= 0 ? '0' : c;
+}
 
 // Listen
 app.listen(app.get('port'), function() {

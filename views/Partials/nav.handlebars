@@ -1,8 +1,8 @@
 <nav>
-  <h2>{{title}}</h2>
+  <h2><span class="prev-challenge"><a href="./cc{{prevC}}"> <<</a></span> {{title}} <span class="next-challenge"><a href="./cc{{nextC}}"> >></a></span></h2>
   <ul>
   {{#each challenges}}
-    <li><a href="./cc{{@key}}">CC{{@key}}: {{this}}</a></li>
+      <li class="{{#ifActive ../current this}}active{{/ifActive}}"><a href="./cc{{@key}}">CC{{@key}}: {{this}}</a></li>
   {{/each}}
   </ul>
 </nav>

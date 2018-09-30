@@ -63,6 +63,7 @@ const challenges = [
                     {id: '26', title: 'Supershape3d'},
                     {id: '27', title: 'Fireworks'},
                     {id: '28', title: 'Metaballs'},
+                    {id: '29', title: 'SmartRockets'},
                   ]
 
 challenges.forEach(function (c) {

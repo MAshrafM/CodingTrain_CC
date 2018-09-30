@@ -89,3 +89,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC28: Metaballs  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/28_Metaballs/show.gif)  
+
+- CC29: Smart Rockets  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/29_SmartRockets/show.gif)  

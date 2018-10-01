@@ -92,3 +92,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC29: Smart Rockets  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/29_SmartRockets/show.gif)  
+
+- CC30: Phyllotaxis  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/30_Phyllotaxis/show.gif)  

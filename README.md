@@ -95,3 +95,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC30: Phyllotaxis  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/30_Phyllotaxis/show.gif)  
+
+- CC31: FlappyBird  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/31_FlappyBird.gif)  

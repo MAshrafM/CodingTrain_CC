@@ -103,4 +103,7 @@ Simple node/express application to view different static files on the same site,
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/32_Agario.gif)  
 
 - CC33: Diffusion Limited Aggregation  
-![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/33_DLA.gif) 
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/33_DLA.gif)  
+
+- CC34: Poisson Disc  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/34_PoissonDisc.gif)  

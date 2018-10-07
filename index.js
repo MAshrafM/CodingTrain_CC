@@ -69,6 +69,7 @@ const challenges = [
                     {id: '32', title: 'Agario'},
                     {id: '33', title: 'DiffusionLA'},
                     {id: '34', title: 'PoissonDisc'},
+                    {id: '35.1', title: 'TSP'},
                   ]
 
 challenges.forEach(function (c) {

@@ -97,16 +97,19 @@ Simple node/express application to view different static files on the same site,
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/30_Phyllotaxis/show.gif)  
 
 - CC31: FlappyBird  
-![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/31_FlappyBird.gif)  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/31_FlappyBird/show.gif)  
 
 - CC32: Agario  
-![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/32_Agario.gif)  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/32_Agario/show.gif)  
 
 - CC33: Diffusion Limited Aggregation  
-![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/33_DLA.gif)  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/33_DLA/show.gif)  
 
 - CC34: Poisson Disc  
-![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/34_PoissonDisc.gif)  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/34_PoissonDisc/show.gif)  
 
 - CC35.1: Traveling Salesperson  
-![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/35.1_TSP.gif)  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/35.1_TSP/show.gif)  
+
+- CC35.2: Traveling Salesperson Lexicographic Order   
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/35.2_TSPLexical/show.gif)  

@@ -71,6 +71,7 @@ const challenges = [
                     {id: '34', title: 'PoissonDisc'},
                     {id: '35.1', title: 'TSP'},
                     {id: '35.2', title: 'TSPLexical'},
+                    {id: '35.3', title: 'TSPwGA'},
                   ]
 
 challenges.forEach(function (c) {

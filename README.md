@@ -116,3 +116,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC35.3: Traveling Salesperson with Genetic Algorthim and Crossover  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/35.3_TSPwGA/show.gif)  
+
+- CC36: Bloppy  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/36_Bloppy/show.gif)  

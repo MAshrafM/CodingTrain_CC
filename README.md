@@ -119,3 +119,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC36: Bloppy  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/36_Bloppy/show.gif)  
+
+- CC37: Diastic Machine  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/37_DiasticMachine/show.PNG)  

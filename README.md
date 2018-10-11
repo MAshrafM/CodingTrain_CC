@@ -122,3 +122,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC37: Diastic Machine  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/37_DiasticMachine/show.PNG)  
+
+- CC38: Word Interactor  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/38_WordInteractor/show.PNG)  

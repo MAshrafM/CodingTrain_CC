@@ -125,3 +125,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC38: Word Interactor  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/38_WordInteractor/show.PNG)  
+
+- CC39: Madlibs  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/39_Madlibs/show.PNG)  

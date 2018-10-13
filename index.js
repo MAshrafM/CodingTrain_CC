@@ -76,6 +76,7 @@ const challenges = [
                     {id: '37', title: 'DiasticMachine'},
                     {id: '38', title: 'WordInteractor'},
                     {id: '39', title: 'Madlibs'},
+                    {id: '40.1', title: 'WordCounter'},
                   ]
 
 challenges.forEach(function (c) {

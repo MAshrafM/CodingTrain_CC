@@ -128,3 +128,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC39: Madlibs  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/39_Madlibs/show.PNG)  
+
+- CC40.1: Word Counter  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/40.1_WordCounter/show.PNG)  

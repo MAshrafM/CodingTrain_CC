@@ -79,7 +79,7 @@ const challenges = [
                     {id: '40.1', title: 'WordCounter'},
                   ]
 
-challenges.forEach(function (c) {
+challenges.forEach(function (c, index) {
   let scripts = []
   let dirPath = path.join(__dirname, 'public/CC', `${c.id}_${c.title}`)
   fs.readdir(dirPath, function (err, files) {
@@ -91,23 +91,17 @@ challenges.forEach(function (c) {
     })
   })
   app.get(`/cc${c.id}`, function(request, response) {
-    response.render('index', {title: `${c.id} | ${c.title}`, scripts: scripts, challenges: challenges, nextC: getNext(c), prevC : getPrev(c), current: c.title})
+    response.render('index', {title: `${c.id} | ${c.title}`, scripts: scripts, challenges: challenges, nextC: getNext(index), prevC : getPrev(index), current: c.title})
   })
 })
 
 function getNext(i){
-  let c = Number(i.id)  + 1;
-  if(c < 10){
-    c = '0' + c;
-  }
-  return c > Object.keys(challenges).length ? '0' : c;
+  let c = i  + 1;
+  return c >= challenges.length ? '0' : challenges[c].id;
 }
 function getPrev(i){
-  let c = Number(i.id)  - 1;
-    if(c < 10){
-    c = '0' + c;
-  }
-  return c <= 0 ? '0' : c;
+  let c = i  - 1;
+  return c <= 0 ? '0' : challenges[c].id;
 }
 
 // Listen

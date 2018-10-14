@@ -131,3 +131,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC40.1: Word Counter  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/40.1_WordCounter/show.PNG)  
+
+- CC40.2: Word Counter - Term Frequency Inverse Document Frequency  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/40.2_WordCounterTFidf/show.PNG)  

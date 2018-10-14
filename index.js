@@ -77,6 +77,7 @@ const challenges = [
                     {id: '38', title: 'WordInteractor'},
                     {id: '39', title: 'Madlibs'},
                     {id: '40.1', title: 'WordCounter'},
+                    {id: '40.2', title: 'WordCounterTFidf'},
                   ]
 
 challenges.forEach(function (c, index) {
@@ -87,7 +88,9 @@ challenges.forEach(function (c, index) {
       return console.log('Unable to scan directory: ' + err);
     } 
     files.forEach(function (file) {
-      scripts.push({script: `${c.id}_${c.title}/${file}`})
+      if(path.extname(file) === '.js'){
+        scripts.push({script: `${c.id}_${c.title}/${file}`})
+      }
     })
   })
   app.get(`/cc${c.id}`, function(request, response) {

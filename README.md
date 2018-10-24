@@ -146,3 +146,6 @@ Simple node/express application to view different static files on the same site,
 
 - CC44: AFINN Sentiment Analysis  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/44_AFINN/show.PNG)  
+
+- CC45: Draw  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/45_Draw/show.PNG)  

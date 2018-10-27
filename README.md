@@ -152,3 +152,7 @@ Simple node/express application to view different static files on the same site,
 
 - CC46: Asteroids  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/46_Asteroids/show.gif)  
+
+- CC47: Pixel Sorting  
+Very Very slow rendering with too much processing need optimization no gif/png  
+

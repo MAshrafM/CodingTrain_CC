@@ -158,3 +158,8 @@ Very Very slow rendering with too much processing need optimization no gif/png
 
 - CC48: TweetsCount  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/48_TweetsCount/show.PNG)  
+
+- CC49: Photo Mosaic  
+Too many images for the mosaic + need optimization for rendering and loading images for it.   
+
+ 

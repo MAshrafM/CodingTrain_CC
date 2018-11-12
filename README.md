@@ -164,3 +164,6 @@ Too many images for the mosaic + need optimization for rendering and loading ima
 
 - CC50.1: CirclePack  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/50.1_CirclePack/show.gif)  
+
+- CC50.2: CirclePack  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/50.2_CirclePack/show.PNG)  

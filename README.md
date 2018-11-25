@@ -170,3 +170,6 @@ Too many images for the mosaic + need optimization for rendering and loading ima
   
 - CC51: A* Path Finding Algorthim  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/51_AStar/show.PNG)  
+
+- CC52: Random Walk  
+Simple random walk with switch case on a the o/p of a random function.  

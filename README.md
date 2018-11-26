@@ -173,3 +173,6 @@ Too many images for the mosaic + need optimization for rendering and loading ima
 
 - CC52: Random Walk  
 Simple random walk with switch case on a the o/p of a random function.  
+
+- CC53: Random Walk Levy  
+Simple random walk with Vectors.  

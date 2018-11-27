@@ -176,3 +176,6 @@ Simple random walk with switch case on a the o/p of a random function.
 
 - CC53: Random Walk Levy  
 Simple random walk with Vectors.  
+
+- CC54.1: Star Pattern  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/54.1_StarPattern/show.PNG)  

@@ -179,3 +179,6 @@ Simple random walk with Vectors.
 
 - CC54.1: Star Pattern  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/54.1_StarPattern/show.PNG)  
+
+- CC54.2: Star Pattern  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/54.2_StarPattern/show.PNG)  

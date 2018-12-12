@@ -95,6 +95,7 @@ const challenges = [
                     {id: '54.1', title: 'StarPattern'},
                     {id: '54.2', title: 'StarPatterns'},
                     {id: '55', title: 'Roses'},
+                    {id: '56', title: 'Attract'},
                   ]
 
 challenges.forEach(function (c, index) {

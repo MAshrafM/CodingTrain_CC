@@ -184,5 +184,8 @@ Simple random walk with Vectors.
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/54.2_StarPattern/show.PNG)  
 
 - CC55: Roses  
-![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/55_Roses/show.jpg)  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/55_Roses/show.png)  
+
+- CC56: Attract  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/56_Attract/show.gif)  
 

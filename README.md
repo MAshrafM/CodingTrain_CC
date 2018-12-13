@@ -189,3 +189,5 @@ Simple random walk with Vectors.
 - CC56: Attract  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/56_Attract/show.gif)  
 
+- CC57: Earthquake  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/57_Earthquake/show.PNG)  

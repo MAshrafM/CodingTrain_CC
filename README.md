@@ -191,3 +191,6 @@ Simple random walk with Vectors.
 
 - CC57: Earthquake  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/57_Earthquake/show.PNG)  
+
+- CC58: Earthquake 3D 
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/58_Earthquake3d/show.PNG)

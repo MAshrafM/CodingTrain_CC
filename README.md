@@ -193,4 +193,8 @@ Simple random walk with Vectors.
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/57_Earthquake/show.PNG)  
 
 - CC58: Earthquake 3D 
-![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/58_Earthquake3d/show.PNG)
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/58_Earthquake3d/show.PNG)  
+
+- CC59: Steer Text  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/59_SteerText/show.gif)  
+  

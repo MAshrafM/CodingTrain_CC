@@ -198,3 +198,5 @@ Simple random walk with Vectors.
 - CC59: Steer Text  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/59_SteerText/show.gif)  
   
+- CC60: Butterfly Wings  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/60_ButterflyWings/show.gif)  

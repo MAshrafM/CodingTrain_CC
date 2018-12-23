@@ -5,6 +5,8 @@ const path = require('path')
 const fs = require('fs')
 const app = express()
 
+let cc = require('./cc')
+
 // middleware
 app.set('port', (process.env.PORT || 3000))
 
@@ -33,101 +35,41 @@ app.use("/public/CC", express.static(__dirname + '/public/CC'))
 /* ToDo Main Route for all challenges later */
 // To Do
 
-// Challenges
-const challenges = [
-                    {id: '01', title: 'StarField'},
-                    {id: '02', title: 'SpongeFractal'},
-                    {id: '03', title: 'Snake'},
-                    {id: '04', title: 'ColorRain'},
-                    {id: '05', title: 'SpaceInvaders'},
-                    {id: '06', title: 'Mitosis'},
-                    {id: '07', title: 'Solar2d'},
-                    {id: '08', title: 'Solar3d'},
-                    {id: '09', title: 'Solar3dTexture'},
-                    {id: '10', title: 'MazeGen'},
-                    {id: '11', title: 'PerlinNoise'},
-                    {id: '12', title: 'LorenzAttractor'},
-                    {id: '13', title: 'Diffusion'},
-                    {id: '14', title: 'FractalRec'},
-                    {id: '15', title: 'FractalOO'},
-                    {id: '16', title: 'FractalL'},
-                    {id: '17', title: 'FractalSC'},
-                    {id: '18', title: 'Fractal3d'},
-                    {id: '19', title: 'Superellipse'},
-                    {id: '20', title: 'Cloth3d'},
-                    {id: '21', title: 'Mandelbrot'},
-                    {id: '22', title: 'JuliaSet'},
-                    {id: '23', title: 'Supershape2d'},
-                    {id: '24', title: 'PerlinNoiseFlowField'},
-                    {id: '25', title: 'SphericalGeometry'},
-                    {id: '26', title: 'Supershape3d'},
-                    {id: '27', title: 'Fireworks'},
-                    {id: '28', title: 'Metaballs'},
-                    {id: '29', title: 'SmartRockets'},
-                    {id: '30', title: 'Phyllotaxis'},
-                    {id: '31', title: 'FlappyBird'},
-                    {id: '32', title: 'Agario'},
-                    {id: '33', title: 'DiffusionLA'},
-                    {id: '34', title: 'PoissonDisc'},
-                    {id: '35.1', title: 'TSP'},
-                    {id: '35.2', title: 'TSPLexical'},
-                    {id: '35.3', title: 'TSPwGA'},
-                    {id: '36', title: 'Bloppy'},
-                    {id: '37', title: 'DiasticMachine'},
-                    {id: '38', title: 'WordInteractor'},
-                    {id: '39', title: 'Madlibs'},
-                    {id: '40.1', title: 'WordCounter'},
-                    {id: '40.2', title: 'WordCounterTFidf'},
-                    {id: '41', title: 'ClappyBird'},
-                    {id: '42', title: 'MarkovChain'},
-                    {id: '43', title: 'ContextFreeGrammer'},
-                    {id: '44', title: 'AFINN'},
-                    {id: '45', title: 'Draw'},
-                    {id: '46', title: 'Asteroids'},
-                    {id: '47', title: 'PixelSorting'},
-                    {id: '48', title: 'TweetsCount'},
-                    {id: '49', title: 'PhotoMosaic'},
-                    {id: '50.1', title: 'CirclePack'},
-                    {id: '50.2', title: 'CirclePack'},
-                    {id: '51', title: 'AStar'},
-                    {id: '52', title: 'RandWalk'},
-                    {id: '53', title: 'RandWalkLevy'},
-                    {id: '54.1', title: 'StarPattern'},
-                    {id: '54.2', title: 'StarPatterns'},
-                    {id: '55', title: 'Roses'},
-                    {id: '56', title: 'Attract'},
-                    {id: '57', title: 'Earthquacke'},
-                    {id: '58', title: 'Earthquacke3d'},
-                    {id: '59', title: 'SteerText'},
-                    {id: '60', title: 'ButterflyWings'},
-                  ]
+// Get Challenges
+const cTable = cc.getChallenges().then(function(table){
+  return table;
+}).catch((err) => console.log(err));
 
-challenges.forEach(function (c, index) {
-  let scripts = []
-  let dirPath = path.join(__dirname, 'public/CC', `${c.id}_${c.title}`)
-  fs.readdir(dirPath, function (err, files) {
-    if (err) {
-      return console.log('Unable to scan directory: ' + err);
-    } 
-    files.forEach(function (file) {
-      if(path.extname(file) === '.js'){
-        scripts.push({script: `${c.id}_${c.title}/${file}`})
-      }
+// Build Challenges Routes
+cTable.then(function(challenges){
+  challenges.forEach(function (c, index) {
+    let scripts = []
+    let dirPath = path.join(__dirname, 'public/CC', `${c.id}_${c.title}`)
+    fs.readdir(dirPath, function (err, files) {
+      if (err) {
+        return console.log('Unable to scan directory: ' + err);
+      } 
+      files.forEach(function (file) {
+        if(path.extname(file) === '.js'){
+          scripts.push({script: `${c.id}_${c.title}/${file}`})
+        }
+      })
+    })
+    app.get(`/cc${c.id}`, function(request, response) {
+      response.render('index', {title: `${c.id} | ${c.title}`, scripts: scripts, challenges: challenges, nextC: getNext(index), prevC : getPrev(index), current: c.title})
     })
   })
-  app.get(`/cc${c.id}`, function(request, response) {
-    response.render('index', {title: `${c.id} | ${c.title}`, scripts: scripts, challenges: challenges, nextC: getNext(index), prevC : getPrev(index), current: c.title})
-  })
-})
-
-function getNext(i){
-  let c = i  + 1;
-  return c >= challenges.length ? '0' : challenges[c].id;
-}
-function getPrev(i){
-  let c = i  - 1;
-  return c <= 0 ? '0' : challenges[c].id;
-}
+  
+  function getNext(i){
+    let c = i  + 1;
+    return c >= challenges.length ? '0' : challenges[c].id;
+  }
+  function getPrev(i){
+    let c = i  - 1;
+    return c <= 0 ? '0' : challenges[c].id;
+  }
+  console.log("Routes Built");
+}).catch((err) => console.log(err));
 
 // Listen
 app.listen(app.get('port'), function() {

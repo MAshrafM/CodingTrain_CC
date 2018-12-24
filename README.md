@@ -192,7 +192,7 @@ Simple random walk with Vectors.
 - CC57: Earthquake  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/57_Earthquake/show.PNG)  
 
-- CC58: Earthquake 3D 
+- CC58: Earthquake 3D  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/58_Earthquake3d/show.PNG)  
 
 - CC59: Steer Text  
@@ -200,3 +200,6 @@ Simple random walk with Vectors.
   
 - CC60: Butterfly Wings  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/60_ButterflyWings/show.gif)  
+  
+- CC61: Fractal Spirography  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/61_FractalSpirography/show.PNG)  

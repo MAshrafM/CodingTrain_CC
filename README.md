@@ -203,3 +203,6 @@ Simple random walk with Vectors.
   
 - CC61: Fractal Spirography  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/61_FractalSpirography/show.PNG)  
+
+- CC62: Plinko  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/62_Plinko/show.gif)  

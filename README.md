@@ -211,4 +211,5 @@ Simple random walk with Vectors.
 Texture Cloth Simulation with a unikitty flag, problem with 3D in toxiclib js plus much processing power. better in java. [challenge](https://www.youtube.com/watch?v=FeXnJSCFj-Q)  
 
 - CC64.1: Forward Kinematics  
-- CC64.2: Inverse Kinematics
+- CC64.2: Inverse Kinematics  
+- CC64.3: Robot Arm  

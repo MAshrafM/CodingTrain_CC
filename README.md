@@ -225,3 +225,6 @@ Simple CountDown.
 
 - CC67: Pong  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/67_Pong/show.PNG)  
+
+- CC68: BFS  
+6th Degree of Kevin Bacon game with a graph of BFS Algorthim on a data set.  

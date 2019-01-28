@@ -228,3 +228,6 @@ Simple CountDown.
 
 - CC68: BFS  
 6th Degree of Kevin Bacon game with a graph of BFS Algorthim on a data set.  
+  
+- CC69: Evolutionary Steering Behaviors.  
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/69_Steering/show.gif)  

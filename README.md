@@ -231,3 +231,6 @@ Simple CountDown.
   
 - CC69: Evolutionary Steering Behaviors.  
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/69_Steering/show.gif)  
+
+- CC70.1: Similarity Scores  
+- CC70.2: Nearest Neighbors Recommendation  

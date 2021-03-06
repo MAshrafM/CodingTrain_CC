@@ -1,4 +1,4 @@
-let data,resultP, resultDivs;
+let data, users, resultP, resultDivs;
 
 function preload() {
   data = loadJSON('./public/CC/70.3_RecommendationE/movies.json');
@@ -6,12 +6,13 @@ function preload() {
 
 function setup() {
   noCanvas();
-
+  users = {};
   resultDivs = [];
   let choice = createDiv('');
   choice.id("ratings")
   let titles = data.titles;
   let dropdowns = [];
+
   for(let title of titles){
     let div = createDiv(title);
     div.class('drops')
@@ -50,7 +51,7 @@ function setup() {
     resultDivs = [];
     let simScores = {};
     for(let user of data.users){
-      let similarity = euclideanDistance(userM, user.name);
+      let similarity = euclideanDistance(userM, user);
       simScores[user.name] = similarity;
     }
 
@@ -61,18 +62,34 @@ function setup() {
       return score2 - score1;
     }
 
-    let k = 5;
+    
     let results = createDiv('');
     results.id('results');
-    for(let i = 0; i < k; i++){
-      let name = data.users[i].name;
-      let score = nf(simScores[name], 1, 2)
-      let div = createDiv(name + ': ' + simScores[name])
-      resultDivs.push(div);
-      results.child(div);
-      resultP.parent(div)
-    }
 
+    let newTitles = [];
+    for(let title of data.titles){
+      if(userM.title == null){
+        let k = 5;
+        let weightedSum = 0;
+        let simSum = 0;
+        for(let i = 0; i < k; i++){
+          let name = data.users[i].name;
+          let sim = simScores[name];
+          let ratings = data.users[i];
+          let rating = ratings[title];
+          if(rating != null){
+            weightedSum += rating * sim;
+            simSum += sim;
+          }
+        }
+
+        let stars = nf(weightedSum / simSum, 1, 2);
+        let div = createDiv(title + ': ' + stars);
+        resultDivs.push(div);
+        results.child(div);
+        resultP.parent(div)
+      }
+    }
   }
 
   function euclideanDistance(ratings1, ratings2) {

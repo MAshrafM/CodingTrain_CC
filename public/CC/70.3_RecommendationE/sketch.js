@@ -28,10 +28,7 @@ function setup() {
   }
   
   let button = createButton('submit');
-  button.mousePressed(predictRatings);
-  resultP = createP('');
-
-  function predictRatings(){
+  button.mousePressed(() => {
     let newUser = {};
     for(let dropdown of dropdowns){
       let title = dropdown.title;
@@ -42,8 +39,13 @@ function setup() {
       newUser[title] = rating;
     }
     findNearestNeighbors(newUser)
+  });
+  resultP = createP('');
+/*
+  function predictRatings(){
+    
   }
-
+*/
   function findNearestNeighbors(userM){
     for(let div of resultDivs){
       div.remove();
@@ -55,18 +57,15 @@ function setup() {
       simScores[user.name] = similarity;
     }
 
-    data.users.sort(compareSimilarity);
-    function compareSimilarity(a, b){
+    data.users.sort((a, b) => {
       let score1 = simScores[a.name];
       let score2 = simScores[b.name];
       return score2 - score1;
-    }
-
+    });
     
     let results = createDiv('');
     results.id('results');
 
-    let newTitles = [];
     for(let title of data.titles){
       if(userM.title == null){
         let k = 5;
@@ -107,6 +106,5 @@ function setup() {
     let d = sqrt(sumSquares);
     let similarity = 1 / (1 + d);
     return similarity;
-    //resultP.html(similarity);
   }
 }

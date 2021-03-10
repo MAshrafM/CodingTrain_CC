@@ -22,7 +22,7 @@ class Cell {
             }
             else{
                 fill(200);
-                noStroke();
+                stroke(0);
                 rect(this.x, this.y, this.w, this.w);
                 if(this.neighborCount > 0){
                     textAlign(CENTER);
@@ -39,11 +39,15 @@ class Cell {
 
     reveal(){
         this.revealed = true;
+        if(this.neighborCount == 0){
+            this.floodFill();
+        }
     }
 
     countNeighbors(){
         if(this.mine){
-            return -1;
+            this.neighborCount = -1;
+            return;
         }
         let total = 0;
         for(let i = -1; i <=1; i++){
@@ -52,7 +56,6 @@ class Cell {
             for(let j = -1; j <=1; j++){     
                 let jdx = this.j + j;
                 if(jdx <0 || jdx >= rows) continue;
-                console.log(idx + " : " + jdx)
                 let neighbor = grid[idx][jdx];
                 if(neighbor.mine){
                     total++;
@@ -60,6 +63,21 @@ class Cell {
             }
         }
         this.neighborCount = total;
+    }
+
+    floodFill(){
+        for(let i = -1; i <=1; i++){
+            let idx = this.i + i;
+            if(idx < 0 || idx >= cols) continue;
+            for(let j = -1; j <=1; j++){     
+                let jdx = this.j + j;
+                if(jdx <0 || jdx >= rows) continue;
+                let neighbor = grid[idx][jdx];
+                if(!neighbor.revealed){
+                    neighbor.reveal();
+                }
+            }
+        }
     }
 }
 

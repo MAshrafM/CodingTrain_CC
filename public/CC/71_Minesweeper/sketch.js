@@ -8,7 +8,7 @@ function makeGrid(cols, rows){
 }
 
 const SCREEN = 400;
-const w = 20;
+const w = 40;
 const cols = SCREEN / w;
 const rows = SCREEN / w;
 let grid;
@@ -22,6 +22,16 @@ function setup(){
         }
     }
 
+}
+
+function mousePressed(){
+    for(let i = 0; i < cols; i++){
+        for(let j = 0; j < rows; j++){
+            if(grid[i][j].contains(mouseX, mouseY)){
+                grid[i][j].reveal();
+            }
+        }
+    }
 }
 
 function draw(){

@@ -236,3 +236,6 @@ Simple CountDown.
 - CC70.2: Nearest Neighbors Recommendation  
 - CC70.3: Recommendation Engin
 ![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/70_RecommendationEngine/show.png)  
+
+- CC71: Minesweeper
+![View](https://github.com/MAshrafM/CodingTrain_CC/blob/master/CC/71_Minesweeper/show.gif)  

@@ -1,6 +1,18 @@
 class Frog extends Rectangle {
     constructor(x, y, size){
         super(x, y, size, size);  
+        this.sitting_on = null;
+    }
+
+    attach(other){
+        this.sitting_on = other;
+    }
+
+    update(){
+        if(this.sitting_on !== null){
+            this.x += this.sitting_on.speed;
+        }
+        this.x = constrain(this.x, 0, WIDTH - this.w);
     }
 
     show(){

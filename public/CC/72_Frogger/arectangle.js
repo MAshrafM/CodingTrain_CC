@@ -15,4 +15,13 @@ class Rectangle {
             this.y          >= other.y + other.h
         );
     }
+    // Move Rectangle, update position
+    move(x, y){
+        this.x += x;
+        this.y += y;
+    }
+    // show rectangle
+    show(){
+        rect(this.x, this.y, this.w, this.h);
+    }
 }
